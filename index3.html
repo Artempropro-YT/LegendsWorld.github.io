@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LegendsWorld RP — Профессии</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+  <div class="bg-dots"></div>
+  <header>
+    <h1>LegendsWorld RP</h1>
+    <nav>
+      <a href="index1.html">Главная</a>
+      <a href="index2.html">Правила</a>
+      <a href="index3.html">Профессии</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <h2>Профессии сервера</h2>
+      <p>Зарплаты указаны за день игры. Полиция, больница и мэр — редкие профессии: туда попадают по выбору администрации или через выборы.</p>
+    </div>
+
+    <div class="card prof-card">
+      <h2>Обычные профессии</h2>
+      <table>
+        <tr><th>Профессия</th><th>Зарплата</th></tr>
+        <tr><td>Рабочий OZON/ВБ</td><td class="salary">15 000 — 22 000 монет/день</td></tr>
+        <tr><td>Кассир</td><td class="salary">15 000 — 22 000 монет/день</td></tr>
+        <tr><td>Дворник / Уборщик</td><td class="salary">12 000 — 15 000 монет/день</td></tr>
+        <tr><td>Таксист</td><td class="salary">20 000 — 35 000 монет/день</td></tr>
+        <tr><td>Курьер</td><td class="salary">25 000 — 40 000 монет/день</td></tr>
+        <tr><td>Водитель грузовика</td><td class="salary">30 000 — 50 000 монет/день</td></tr>
+        <tr><td>Автомеханик-тюнер</td><td class="salary">25 000 — 45 000 монет/день</td></tr>
+      </table>
+    </div>
+
+    <div class="card prof-rare">
+      <h2>Редкие профессии</h2>
+      <table>
+        <tr><th>Профессия</th><th>Зарплата</th></tr>
+        <tr><td>Полиция / МВД</td><td class="salary">40 000 — 110 000 монет/день</td></tr>
+        <tr><td>Инкассатор</td><td class="salary">45 000 — 70 000 монет за рейс</td></tr>
+        <tr><td>Больница</td><td class="salary">45 000 — 85 000 монет/день</td></tr>
+      </table>
+    </div>
+
+    <div class="card prof-mayor">
+      <h2>Выборная должность</h2>
+      <table>
+        <tr><th>Должность</th><th>Зарплата</th></tr>
+        <tr><td>Мэр / Глава города</td><td class="salary">150 000 — 300 000 монет/день</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2026 LegendsWorld RP. Сайт-визитка проекта.
+  </footer>
+<script>
+    function copyIP() {
+      const ip = 'play.legendsworld.ru:7777';
+      navigator.clipboard.writeText(ip).then(() => {
+        alert('IP скопирован: ' + ip);
+      }).catch(() => {
+        prompt('Скопируйте IP вручную:', ip);
+      });
+    }
+  </script>
+</body>
+</html>

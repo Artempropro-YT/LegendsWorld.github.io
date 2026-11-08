@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LegendsWorld RP — Главная</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+  <div class="bg-dots"></div>
+  <header>
+    <h1>LegendsWorld RP</h1>
+    <nav>
+      <a href="index1.html">Главная</a>
+      <a href="index2.html">Правила</a>
+      <a href="index3.html">Профессии</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <h2>Добро пожаловать на LegendsWorld RP</h2>
+      <p>Твой путь в мире ролевой игры начинается здесь. Изучи правила, выбери профессию и присоединяйся к нашему сообществу!</p>
+    </div>
+
+    <div class="ip-box">
+      <h3>IP-адрес сервера</h3>
+      <code>play.legendsworld.ru:7777</code><br>
+      <button onclick="copyIP()">Скопировать IP</button>
+    </div>
+
+    <div class="card">
+      <h2>Новости</h2>
+      <p>Сервер открыт! Заходи, изучай город и выбирай профессию.</p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2026 LegendsWorld RP. Сайт-визитка проекта.
+  </footer>
+
+<script>
+    function copyIP() {
+      const ip = 'play.legendsworld.ru:7777';
+      navigator.clipboard.writeText(ip).then(() => {
+        alert('IP скопирован: ' + ip);
+      }).catch(() => {
+        prompt('Скопируйте IP вручную:', ip);
+      });
+    }
+  </script>
+</body>
+</html>
